@@ -1,5 +1,7 @@
-$navbar-default-bg: #312312;
-$light-orange: #ff8c00;
+$navbar-default-bg: #EFCF96;
+$light-orange: #FF8C00;
+$quite-coral: #CB6453;
+$rhumba-orange: #CB7C3A;
 $navbar-default-color: $light-orange;
 
 @import "bootstrap-sprockets";
@@ -11,21 +13,49 @@ $navbar-default-color: $light-orange;
   float: left;
   margin-right: 10px;
   font-size: 2em;
-  color: #fff;
+  color: $quite-coral;
   text-transform: uppercase;
   letter-spacing: -1px;
+  font-family: 'Open Sans';
   padding-top: 9px;
   font-weight: bold;
 }
 
 #logo:hover {
-  color: white;
+  color: $rhumba-orange;
   text-decoration: none;
 }
 
 body {
   padding-top: 80px;
 }
+
+a {
+  color: $quite-coral;
+}
+
+a:hover {
+  color: $rhumba-orange;
+}
+
+.pagination > .active > a {
+  border-color: $quite-coral !important;
+  background-color: $quite-coral !important;
+  color: #FFF !important;
+}
+
+.pagination {
+  margin: 5px 5px !important;
+}
+
+.pagination > li > a {
+  color: $quite-coral;
+}
+
+.pagination > li > a:hover {
+  color: $rhumba-orange;
+}
+
 
 .nav_item {
   margin-left: 25px;
