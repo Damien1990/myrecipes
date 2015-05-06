@@ -8,8 +8,6 @@ $navbar-default-color: $light-orange;
 @import "bootstrap";
 
 #logo {
-  margin-top: 10px;
-  margin-bottom: 10px;
   float: left;
   margin-right: 10px;
   font-size: 2em;
@@ -27,7 +25,7 @@ $navbar-default-color: $light-orange;
 }
 
 body {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 a {
@@ -48,6 +46,23 @@ a:hover {
   margin: 5px 5px !important;
 }
 
+.navbar-nav > li > .dropdown-menu {
+  background-color: $navbar-default-bg;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  color: $quite-coral;
+  background-color: #EBC279;
+}
+
+.dropdown-menu > li > a {
+  color: $quite-coral;
+}
+
+.dropdown-menu .divider {
+  background-color: #EBC279;
+}
+
 .pagination > li > a {
   color: $quite-coral;
 }
@@ -56,11 +71,26 @@ a:hover {
   color: $rhumba-orange;
 }
 
+.navbar-default .navbar-nav > li > a {
+  color: $quite-coral;
+}
 
-.nav_item {
-  margin-left: 25px;
-  float: left;
-  margin-top: 20px;
+.navbar-default .navbar-nav > li > a:focus {
+  color: $rhumba-orange;
+  background-color: #EBC279;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  color: $rhumba-orange;  
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: $rhumba-orange;
+  background-color: #EBC279;
+}
+
+.navbar-default .navbar-nav > .open > a:focus {
+  color: $rhumba-orange; 
 }
 
 .center {
