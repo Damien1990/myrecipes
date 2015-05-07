@@ -18,9 +18,12 @@
       <%= image_tag(@recipe.picture.url, class: "recipe_avatar") if @recipe.picture? %>
     </div>
     <div class="well">
+      <% if @recipe.styles.any? %>
       <p><strong>Style:</strong> <%= render @recipe.styles %></p>
+      <% end %>
+      <% if @recipe.ingredients.any? %>
       <p><strong>Ingredients:</strong> <%= render @recipe.ingredients %></p>
-      <p>
+      <% end %><p>
         <strong>Steps:</strong>
       </p>
       <%= simple_format(@recipe.description) %>
